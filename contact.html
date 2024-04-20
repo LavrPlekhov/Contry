@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О авторе</a>
+            <a href="australia.html">Австралия</a>
+            <a href="austria.html">Австрия</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+<form action="send.php">
+    <label for="name">
+        ФИО
+    </label>
+    <input type="text" name="name" id="name" placeholder="Иванов Иван Иваныч"required>
+       <label for="tel">
+        телефон
+       </label>
+    <input type="tel" name="tel" id="tel" placeholder="+7(999) 999-99-99"required>
+    <label for="email">
+     почта
+    </label>
+    <input type="email" name="email" id="email" placeholder="proverka@gmail.com*">
+    <label for="date">
+     дата
+    </label>
+    <input type="date" name="date" id="date"placeholder="31.02.2024">
+    <label for="time">
+     время
+    </label>
+    <input type="time" name="time" id="time">
+     <label for="adds_for_site">
+            чего вам не хватает на сайте
+     </label>
+     <div class="inner_padding" id="adds_for_site">
+        <label class="container">больше стран
+            <input type="checkbox" name="more_pages" checked="checked">
+            <span class="chekmark"></span>
+        </label>   
+     </div>
+    </label>
+    <div class="inner_padding" id="adds_for_site">
+       <label class="container">мало информации
+           <input type="checkbox" name="more_info" checked="checked">
+           <span class="chekmark"></span>
+       </label>   
+    </div>
+    <label class="container">мало элементов
+        <input type="checkbox" name="more_elemements" checked="checked">
+        <span class="chekmark"></span>
+    </label> 
+    <label for="rank"><b>оцените сайт</b></label>
+    <input type="range" id="rank" name="rank" min="0" max="10">  
+</form>
+        </div>
+    </main>
+</body>
+</html>
