@@ -40,7 +40,8 @@
     </label>
     <input type="time" name="time" id="time">
      <label for="adds_for_site">
-            чего вам не хватает на сайте
+        <br>
+            чего вам не хватает на сайте?
      </label>
      <div class="inner_padding" id="adds_for_site">
         <label class="container">больше стран
@@ -60,7 +61,54 @@
         <span class="chekmark"></span>
     </label> 
     <label for="rank"><b>оцените сайт</b></label>
-    <input type="range" id="rank" name="rank" min="0" max="10">  
+    <input type="range" id="rank" name="rank" min="0" max="10"> 
+    <br>
+    <label for="">
+        укажите ваш пол
+    </label>
+    <div>
+    <input type="radio" id="mus" name="gender">
+    <label for="mus">
+        мужской
+    </label>
+    </div>
+    <div>
+      <input type="radio" id="fem" name="gender">
+      <label for="fem">
+        женский
+      </label>
+    </div>
+      <br>
+      <label for="age">
+        сколько вам лет?
+      </label>
+      <input type="number" id="age" name="age">
+      <br>
+      <label for="city">
+        укажите ваш город
+      </label>
+      <select name="city" id="city">
+            <option value="Москва">
+             Москва
+            </option>
+            <option value="Нижний Новгород">
+                Нижний Новгород
+               </option>
+                <option value="Себирь">
+                    Себирь
+                </option>
+                <option value="Инополис">
+                    Инополис
+                </option>
+           </select>
+           <br>
+           <label for="comment">
+            Напешите коментарий
+           </label>
+            <textarea name="comment" id="comment" cols="30" rows="3">
+            </textarea>
+            <br>
+            <input type="submit" value="Отправить" id="button">
 </form>
         </div>
     </main>
